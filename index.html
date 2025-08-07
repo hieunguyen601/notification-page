@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notifications UI</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h2>Notifications <span class="count">3</span></h2>
+      <button class="mark-all">Mark all as read</button>
+    </div>
+
+    <div onclick="alreadyRead(event)"  class="notification new">
+      <img src="./assets/images/avatar-mark-webber.webp" alt="Mark Webber" />
+      <div class="info">
+        <p><strong>Mark Webber</strong> reacted to your recent post <strong>My first tournament today!</strong> <span class="dot"></span></p>
+        <span class="time">1m ago</span>
+      </div>
+    </div>
+
+    <div onclick="alreadyRead(event)"  class="notification new">
+      <img src="./assets/images/avatar-angela-gray.webp" alt="Angela Gray" />
+      <div class="info">
+        <p><strong>Angela Gray</strong> followed you <span class="dot"></span></p>
+        <span class="time">5m ago</span>
+      </div>
+    </div>
+
+    <div onclick="alreadyRead(event)" class="notification new">
+      <img src="./assets/images/avatar-jacob-thompson.webp" alt="Jacob Thompson" />
+      <div class="info">
+        <p><strong>Jacob Thompson</strong> has joined your group <strong class="link">Chess Club</strong> <span class="dot"></span></p>
+        <span class="time">1 day ago</span>
+      </div>
+    </div>
+
+    <div class="notification">
+      <img src="./assets/images/avatar-rizky-hasanuddin.webp" />
+      <div class="info">
+        <p><strong>Rizky Hasanuddin</strong> sent you a private message</p>
+        <span class="time">5 days ago</span>
+        <div class="message">
+          Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I’m already having lots of fun and improving my game.
+        </div>
+      </div>
+    </div>
+
+    <div onclick="alreadyRead(event)" class="notification">
+      <img src="./assets/images/avatar-kimberly-smith.webp" alt="Jacob Thompson" />
+      <div class="info">
+        <div class="commented">
+          <p><strong>Kimberly Smith</strong> commented on your picture</p>
+          <img src="./assets/images/image-chess.webp" alt="chess">
+        </div>
+        <span class="time">1 week ago</span>
+      </div>
+    </div>
+
+    <div onclick="alreadyRead(event)" class="notification">
+      <img src="./assets/images/avatar-nathan-peterson.webp" alt="Jacob Thompson" />
+      <div class="info">
+        <p><strong>Nathan Peterson</strong> reacted to your recent post <strong>5 end-game strategies to </strong> <span>increase your win rate</span></p>
+        <span class="time"> 2 weeks ago</span>
+      </div>
+    </div>
+
+    <div onclick="alreadyRead(event)" class="notification">
+      <img src="./assets/images/avatar-anna-kim.webp" alt="Jacob Thompson" />
+      <div class="info">
+        <p><strong>Anna Kim</strong> left the group <strong class="link">Chess Club</strong></p>
+        <span class="time">1 day ago</span>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
