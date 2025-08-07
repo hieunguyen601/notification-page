@@ -115,12 +115,15 @@ body {
 }
 
 .commented {
-    display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
 }
 
 .commented img {
-    margin-left: 200px;
-    width: 35px;
-    height: 35px;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
 }
 
